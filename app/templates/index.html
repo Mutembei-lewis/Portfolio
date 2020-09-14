@@ -4,63 +4,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css? family=Ubuntu:300,400,700" rel="stylesheets">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@686&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}"> <!-- CSS reset -->
-	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> <!-- Resource style -->
 	<script src="{{url_for('static', filename='js/modernizr.js')}}"></script> <!-- Modernizr -->
   	<!-- font awesome cdn -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<title>My portfolio</title>
+	<title>Lewis Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="{{url_for('static', filename='css/buttons.css')}}">
+	<!-- link to the about section  -->
+	<link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}">
+	<!--  -->
+	<!-- material design bootstrap code  -->
+	 <!-- Bootstrap core CSS -->
+	 <link rel="stylesheet" href="{{url_for('static', filename='main-css/bootstrap.min.css')}}">
+	 <!-- Material Design Bootstrap -->
+	 <link rel="stylesheet" href="{{url_for('static', filename='main-css/mdb.min.css')}}">
+	 <!-- Your custom styles (optional) -->
+	 <link rel="stylesheet" href="{{url_for('static', filename='main-css/style.css')}}">
+	  <!-- MDB icon -->
+	  <link rel="icon" href="{{url_for('static', filename='images/iconic.png')}}" type="image/x-icon">
+	  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> <!-- Resource style -->
+	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <style>
+		.md-pills .nav-link.active {
+		  background-color: #3f51b5;
+		}
+	  </style>
 </head>
 <body>
-	<nav id="cd-vertical-nav">
-		<ul>
-			<li>
-				<a href="#section1" data-number="1">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Home </span>
-				</a>
-			</li>
-			<li>
-				<a href="#section2" data-number="2">
-					<span class="cd-dot"></span>
-					<span class="cd-label">About</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section3" data-number="3">
-					<span class="cd-dot"></span>
-					<span class="cd-label">My projects</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section4" data-number="4">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Skills</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section5" data-number="5">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Contact me</span>
-				</a>
-			</li>
-			<li>
-				<a href="#section6" data-number="6">
-					<span class="cd-dot"></span>
-					<span class="cd-label">Footer</span>
-				</a>
-			</li>
-		</ul>
-	</nav>
-	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+	<section id="section1" class="cd-section container-fluid">
+		<nav id="cd-vertical-nav">
+			<ul>
+				<li>
+					<a href="#section1" data-number="1">
+						<span class="cd-dot"></span>
+						<!-- <span class="cd-label">Home </span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#section2" data-number="2">
+						<span class="cd-dot"></span>
+						<!-- <span class="cd-label">About</span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#section3" data-number="3">
+						<span class="cd-dot"></span>
+						<!-- <span class="cd-label">project</span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#section4" data-number="4">
+						<span class="cd-dot"></span>
+						<!-- <span class="cd-label">Skills</span> -->
+					</a>
+				</li>
+				<li>
+					<a href="#section5" data-number="5">
+						<span class="cd-dot"></span>
+						<!-- <span class="cd-label">Contact</span> -->
+					</a>
+				</li>
+			
+			</ul>
+		</nav>
+		
+			<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
 
-	<section id="section1" class="cd-section">
+	
 		<div class="brand-box">
-			<img src="{{url_for('static', filename='images/upgrade.png')}}" alt=" LOGO" id="mylogo">
+			<img src="{{url_for('static', filename='images/shot.png')}}" alt=" LOGO" id="mylogo">
 		
 
 		</div>
@@ -72,11 +89,19 @@
 			
 		</div>
 		<div class="text-quote"> <p class="main-quote">
-			"Just a few lines of code, and I'll make your idea come alive today"
+			"Just a few lines of code, and I'll make your idea come alive !!"
 		</p></div>
-		<!-- <div class="imagery"> -->
+		
 
-		   <div class="social-buttons">
+		   <div class="social-buttons" >
+			<div class="navigationtop ">
+				<ul class="navigation">
+					<li><a href="#section2" class="nav-linking"> About</a> </li>
+					<li> <a href="#section3" class="nav-linking"> Projects</a></li>
+					<li><a href="#section4" class="nav-linking"> Testimonials</a></li>
+					<li><a href="#section5" class="nav-linking"> Contact</a></li>
+				</ul>
+			</div>
 			<a href="#" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook">
 			  <span class="social-button__inner">
 			   <i class="fab fa-facebook-f"></i>
@@ -106,40 +131,456 @@
 
 			<!-- </div> -->
 
-		</div>
+		<!-- </div> -->
 		<div id="wrapper">
 			<a href="#" class="my-super-cool-btn">
 			  
 			  <span>Hire Me!!</span>
 			</a>
-		  </div>
+		</div>
 		 
 		  
 		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
 	</section><!-- cd-section -->
+	
+	<section  class="dark-grey-text text-center container-fluid cd-section mt-0" id="section2">
+		   <div class="row p-lg-5 p-md-3 p-sm-3 p-xs-2 main-sect">
+			   <div class="col-md-6 m-md-auto mx-sm-auto col-lg-4 col-sm-8  my-sm-2 col-xs-10">
+					<!-- Card -->
+					<div class="card booking-card">
 
-	<section id="section2" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
+						<!-- Card image -->
+						<div class="view overlay p-lg-4">
+						<img class="mypicture m-auto" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/8-col/img (5).jpg" alt="Card image cap">
+						<h6 class="h6"> Lewis Mutembei </h6>
+						<span> Full stack Developer</span> <br>
+
+						<span> <button type="button" class="btn btn-info btn-sm">Text <i class="fa fa-send"></i></button></span>
+						</div>
+					
+						<!-- Card content -->
+						<div class="card-body">
+					
+						<!-- Title -->
+						<h4 class="card-title h4 "><a>About Me</a></h4>
+						
+						
+						<!-- Text -->
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia delectus maxime tenetur magnam ex ipsam numquam quos dignissimos nostrum hic adipisci optio fuga, fugiat nesciunt cumque minus accusantium, debitis illum!</p>
+						<hr class="my-4">
+						<p class="lead"><strong>Get in Touch</strong></p>
+
+						<div class="d-flex justify-content-around">
+							 <!--Facebook-->
+							 <a type="button" class="btn-floating btn-small btn-fb"><i class="fab fa-facebook-f"></i></a>
+							 <!--Twitter-->
+							 <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-twitter"></i></a>
+							 <!--Instagram-->
+							 <a type="button" class="btn-floating btn-small btn-tw"><i class="fab fa-instagram"></i></a>
+							 <!--Google +-->
+							 <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fab fa-dribbble"></i></a>
+						</div>
+					
+						</div>
+					
+					</div>
+					<!-- Card -->
+			   </div>
+			   
+			 		<div class="col-md-12  col-lg-8 col-sm-10 m-sm-auto col-xs-12 p-lg-4 p-md-3 p-sm-4 p-xs-4 ">
+						<div class="row  ml-md-0">
+							<div class="col-lg-4 col-md-4 col-sm-12 mb-sm-3 pb-sm-3 side-content text-left text-white pl-sm-4 pl-xs-4">
+
+								<img src="{{url_for('static', filename='images/responsive.png')}}" alt="" class="icons ml-md-5 ">
+								<h4 class="text-center h4"> Front-End Developer</h4>
+
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, quam. Aliquid velit numquam id deserunt fuga ipsam veniam consequatur officiis quis. Enim error eu
+
+								
+								</div>
+							<div class="col-lg-4 col-md-4 col-sm-10 text-white side-content text-left">
+
+								<img src="{{url_for('static', filename='/images/desktop.png')}}" alt="" class="icons ">
+								<h6 class=" h4 text-center"> Full Stack Applications</h6>
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid reiciendis cupiditate iusto omnis perferendis at magnam accusamus incidunt eos neque, voluptatem totam eiu
+								
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-10 side-content text-white text-left">
+
+								<img src="{{url_for('static', filename='/images/db.png')}}" alt="" class="icons ml-md-5">
+								<h4 class="text-center h4"> System Deployments </h4>
+
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid reiciendis cupiditate iusto omnis perferendis at magnam accusamus incidunt eos neque, voluptatem totam eiu
+								
+							</div>
+
+
+						</div>
+					</div>
+			</div>
+			<a href="#section3" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section>
 
 	<section id="section3" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+		  <!-- Section heading -->
+		  <h3 class="font-weight-bold text-center pt-4 text-white mb-4 pb-2">My projects</h3>
+		  <!-- Section description -->
+		  <p class="text-white w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia. </p>
+		  
+			<!--First row-->
+			<div class="row">
+			  
+			  <!--First column-->
+			  <div class="col-12">
+				
+				<!-- Nav tabs -->
+				<ul class="nav md-pills flex-center flex-wrap mx-0" role="tablist">
+				  <li class="nav-item">
+					<a class="nav-link  font-weight-bold" data-toggle="tab" href="#panel31" role="tab">ALL</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-white font-weight-bold" data-toggle="tab" href="#panel32" role="tab">REACT</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-white font-weight-bold" data-toggle="tab" href="#panel33" role="tab">DJANGO</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link text-white font-weight-bold" data-toggle="tab" href="#panel34" role="tab">FLASK</a>
+				  </li>
+				</ul>
+				
+			  </div>
+			  <!--First column-->
+	  
+		  </div>
+		  <!--First row-->
+		  
+		  <!--Tab panels-->
+		  <div class="tab-content">
+	  
+			<!--Panel 1-->
+			<div class="tab-pane fade show in active" id="panel31" role="tabpanel">
+	  
+			  <!--First row-->
+			  <div class="row">
+				
+				<!--First column-->
+				<div class="col-lg-4  col-md-12 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--First column-->
+				
+				<!--Second column-->
+				<div class="col-lg-4 col-md-6 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Second column-->
+				
+				<!--Third column-->
+				<div class="col-lg-4 col-md-6 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Third column-->
+				
+			  </div>
+			  <!--First row-->
+	  
+			</div>
+			<!--Panel 1-->
+	  
+			<!--Panel 2-->
+			<div class="tab-pane fade" id="panel32" role="tabpanel">
+	  
+			  <!--First row-->
+			  <div class="row ">
+				
+				<!--First column-->
+				<div class="col-lg-4 col-md-12 ">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--First column-->
+				
+				<!--Second column-->
+				<div class="col-lg-4 col-md-6 ">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project5.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Second column-->
+				
+				<!--Third column-->
+				<div class="col-lg-4 col-md-6 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Third column-->
+				
+			  </div>
+			  <!--First row-->
+	  
+			</div>
+			<!--Panel 2-->
+	  
+			<!--Panel 3-->
+			<div class="tab-pane fade" id="panel33" role="tabpanel">
+	  
+			  <!--First row-->
+			  <div class="row">
+				
+				<!--First column-->
+				<div class="col-lg-4 col-md-12 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project3.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--First column-->
+				
+				<!--Second column-->
+				<div class="col-lg-4 col-md-6">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project6.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Second column-->
+				
+				<!--Third column-->
+				<div class="col-lg-4 col-md-6 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Third column-->
+	  
+			  </div>
+			  <!--First row-->
+	  
+			</div>
+			<!--Panel 3-->
+	  
+			<!--Panel 4-->
+			<div class="tab-pane fade" id="panel34" role="tabpanel">
+	  
+			  <!--First row-->
+			  <div class="row">
+				
+				<!--First column-->
+				<div class="col-lg-4 col-md-12 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project1.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--First column-->
+				
+				<!--Second column-->
+				<div class="col-lg-4 col-md-6 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project7.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Second column-->
+				
+				<!--Third column-->
+				<div class="col-lg-4 col-md-6 mb-4">
+				  <!--Featured image-->
+				  <div class="view overlay zoom z-depth-2">
+					<img src="https://mdbootstrap.com/img/Photos/Others/project8.jpg" class="img-fluid">
+				  </div>
+				  <p class="text-uppercase text-center font-weight-bold text-muted my-4">Lorem ipsum dolor sit
+					amet</p>
+				</div>
+				<!--Third column-->
+				
+			  </div>
+			  <!--First row-->
+	  
+			</div>
+			<!--Panel 4-->
+	  
+		  </div>
+		  <!--Tab panels-->
+		  <a href="#section4" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section>
+
+	<section id="section4" class="cd-section" style="background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); background-size: cover; background-position: center center;">
+		 <!--Section: Content-->
+		 
+	 
+		 <div class=" rounded p-5">
+	 
+		   <!-- Section heading -->
+		   <h3 class="text-center font-weight-bold  mt-3 mb-5" style="color:orange">Get In Touch</h3>
+	 
+		   <form class="mx-md-5" action="">
+	 
+			 <div class="row">
+			   <div class="col-md-6 mb-4">
+	 
+				 <div class="card">
+				   <div class="card-body px-4">
+	 
+					 <!-- Name -->
+					 <div class="md-form md-outline mt-0">
+					   <input type="text" id="name" class="form-control">
+					   <label for="name">Your Name</label>
+					 </div>
+					 <!-- Email -->
+					 <div class="md-form md-outline">
+					   <input type="text" id="email" class="form-control">
+					   <label for="email">Your Email Address</label>
+					 </div>
+					 <!-- Message -->
+					 <div class="md-form md-outline">
+					   <textarea id="message" class="md-textarea form-control" rows="3"></textarea>
+					   <label for="message">Your Message</label>
+					 </div>
+	 
+					 <button type="submit" class="btn btn-primary btn-md btn-block ml-0 mb-0">Send <i class="fas fa-paper-plane"></i></button>
+	 
+				   </div>
+				 </div>
+	 
+			   </div>
+			   <div class="col-md-5 offset-md-1 mt-md-4 mb-4 white-text">
+	 
+				 <h5 class="font-weight-bold">Address</h5>
+				 <p class="mb-0">1632 Main Street</p>
+				 <p class="mb-0">Nairobi, 94126</p>
+				 <p class="mb-4 pb-2">Kenya</p>
+	 
+				 <h5 class="font-weight-bold">Phone</h5>
+				 <p class="mb-4 pb-2">+ 254 795194449</p>
+	 
+				 <h5 class="font-weight-bold">Email</h5>
+				 <p>lewismutembei001@gmail.com</p>
+	 
+			   </div>
+			 </div>
+	 
+		   </form>
+	 
+		 </div>
+					<!-- Footer -->
+			<footer class="page-footer font-small cyan darken-3">
+			
+				<!-- Footer Elements -->
+				<div class="container">
+			
+				<!-- Grid row-->
+				<div class="row">
+			
+					<!-- Grid column -->
+					<div class="col-md-12 py-3">
+					<div class="mb-0 flex-center">
+			
+						<!-- Facebook -->
+						<a class="fb-ic">
+						<i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 "> </i>
+						</a>
+						<!-- Twitter -->
+						<a class="tw-ic">
+						<i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 "> </i>
+						</a>
+						<!-- Google +-->
+						<a class="gplus-ic">
+						<i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 "> </i>
+						</a>
+						<!--Linkedin -->
+						<a class="li-ic">
+						<i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 "> </i>
+						</a>
+						<!--Instagram-->
+						<a class="ins-ic">
+						<i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 "> </i>
+						</a>
+						<!--Pinterest-->
+						<a class="pin-ic">
+						<i class="fab fa-pinterest fa-lg white-text "> </i>
+						</a>
+					</div>
+					</div>
+					<!-- Grid column -->
+			
+				</div>
+				<!-- Grid row-->
+			
+				</div>
+				<!-- Footer Elements -->
+			
+				<!-- Copyright -->
+				<div class="footer-copyright text-center py-3">© 2020Copyright:
+				<a href="https://mdbootstrap.com/education/bootstrap/"> made with <i class="far fa-heart text-danger"></i> by Lewie</a>
+				</div>
+				<!-- Copyright -->
+			
+			</footer>
+			<!-- Footer -->
+	 
+
+	   
 	</section><!-- cd-section -->
 
-	<section id="section4" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
 
-	<section id="section5" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
-
-	<section id="section6" class="cd-section">
-		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
-	</section><!-- cd-section -->
-	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+"> </script>
 <script src="https://kit.fontawesome.com/57c80489f0.js" crossorigin="anonymous"></script>
 <script src="{{url_for('static', filename='js/jquery.js')}}"></script>
 <script src="{{url_for('static', filename='js/main.js')}}"></script> <!-- Resource jQuery -->
+<!--  material design bootstrap javascript files -->
+ <!-- jQuery -->
+ <script type="text/javascript" src="{{url_for('static', filename='main-js/jquery.min.js')}}"></script>
+ <!-- Bootstrap tooltips -->
+ <script type="text/javascript" src="{{url_for('static', filename='main-js/popper.min.js')}}"></script>
+ <!-- Bootstrap core JavaScript -->
+ <script type="text/javascript" src="{{url_for('static', filename='main-js/bootstrap.min.js')}}"></script>
+ <!-- MDB core JavaScript -->
+ <script type="text/javascript" src="{{url_for('static', filename='main-js/mdb.min.js')}}"></script>
+ <!-- Your custom scripts (optional) -->
 </body>
 </html>
+
+
+
+

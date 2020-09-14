@@ -4,7 +4,6 @@ from .main.main import main
 from .enroll.enroll import enroll
 def create_app():
     app = Flask(__name__)
-    app.config.from_object('config.DevelopmentConfig')
 
     app.register_blueprint(main)
     app.register_blueprint(enroll)

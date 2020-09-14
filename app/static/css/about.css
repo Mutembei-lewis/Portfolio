@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+
+.main-text{
+    height: auto;
+  }
+  .mypicture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+ #section2 .card:hover{
+  
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+opacity:1;
+transition: ease-in;
+
+ }
+
+ @media screen and (min-width:1201px){
+    /*footer css*/
+    .footdiv{
+      background-color: #000000d9;
+     
+  }
+  .foot{
+      background-color:rgba(0, 0, 0, 0.755);
+  }
+ 
+
+  a:hover{
+      text-decoration: none;
+  }
+  .footerheading{
+      color: #5218FA;
+      font-size: 17px;
+      font-weight: bold;
+  }
+  .instagram_feed{
+    width: 50px;
+    height: 50px;
+  }
+  .holder-feed{
+    background-color: none;
+  }
+ 
+  .footcard{
+
+      color: white;
+      font-weight: 300;
+      padding: 12px;
+  }
+  #media-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      font-size: 1rem;
+
+  }
+  .social-media{
+
+    
+      background: transparent;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 0px;
+      margin-left: 15px;
+      padding: 7px;
+      
+  }
+  .social-media:hover{
+    border: 1px solid rgb(255, 51, 0);
+
+  }
+  .signup{
+    width: 80px;
+    height: 40px;
+    border: 1px solid coral;
+    color: aqua;
+    border-radius: 24px;
+    background: transparent;
+
+  }
+  .signup:hover{
+    background: white;
+    color: blue;
+  }
+    /*end of footer css*/ 
+ }
+
+
+
+/* ABOUT SECTION MAIN COLUMN CSS  */
+.side-content{
+  position: relative;
+}
+.icons{
+  width: 180;
+  height: 140px;
+  margin: 10px 5px;
+  
+}
+.side-content {
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 1.2px;
+}
+.side-content .h4{
+color: orange;
+font-weight: bolder;
+
+margin:20px 5px 10px 5px
+}
+@media only screen and (max-width: 600px){
+  .icons{
+margin-left: 100px;
+width: 200px;
+height: 180px;
+text-align: center;
+  }
+}
+/* END */

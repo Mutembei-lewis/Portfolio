@@ -4,11 +4,13 @@
     justify-content: flex-end;
     margin-top: 10px;
     margin-right: 20px;
+    
  
   
     &__button {
       margin: 10px 5px 0;
     }
+    
   }
   
   $social-button-radius: 40px;
@@ -16,6 +18,7 @@
   $social-button-background: #fff;
   $social-button-active-color: #fff;
   $social-button-transition-time: 0.3s;
+  
   
   $social-button-colors: (
     "mail": #0072c6,
@@ -89,6 +92,7 @@
         height: 100%;
         margin-left: -50%;
       }
+     
     }
   
     @each $name, $color in $social-button-colors {
